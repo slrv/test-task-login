@@ -4,6 +4,9 @@ use Core\Http\HandleRequest;
 use Core\Http\Request;
 use Core\Http\Response;
 
+/**
+ * Response to OPTIONS request
+ */
 if (Request::getMethod() === 'OPTIONS') {
     $response = new Response();
     $response->setCode(204)->send();

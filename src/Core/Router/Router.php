@@ -8,6 +8,8 @@ use Exceptions\Router\RouteNotFindException;
 
 class Router
 {
+    const API_PREFIX = 'api';
+
     const GET_METHOD = 'GET';
     const POST_METHOD = 'POST';
 

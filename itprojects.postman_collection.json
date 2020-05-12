@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "afadd19e-bc15-497d-adac-747825397802",
+		"name": "itprojects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "dasd@asd.ddas",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12asdadsasd",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/signIn?XDEBUG_SESSION_START=PHPSTORM",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"signIn"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_SESSION_START",
+							"value": "PHPSTORM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "dasd@asd.ddas",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "sa",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "asda",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12asdadsasd",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "/home/slrv/Pictures/photo_2020-04-21_06-53-29.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/signUp?XDEBUG_SESSION_START=PHPSTORM",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"signUp"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_SESSION_START",
+							"value": "PHPSTORM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9d1f78bd9c2a45c83a1fc1fbb5b6cf37",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{host}}/logout?XDEBUG_SESSION_START=PHPSTORM",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"logout"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_SESSION_START",
+							"value": "PHPSTORM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "4027cb2f36f44fd2fab3f25e99946610",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/me",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "XDEBUG_SESSION_START",
+							"value": "PHPSTORM",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
